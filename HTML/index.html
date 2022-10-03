@@ -4,25 +4,43 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Per utilitzar el CSS de bulma l'he de linkar al document -> posar el de bulma sempre primer, ja que sempre fa cas a l'últim doc que llegeix.  -->
+    <link rel="stylesheet" href="../CSS/bulma.css">
     <link rel="stylesheet" href="../CSS/home.css">
-
     <title>Home page</title>
   </head>
+
+
   <body>
-    <header class="top">
-      <nav class="discover">
-        <img class="circle" src="../ProjectAssets/logos/circle.svg" alt="circleLogo"/>
-        <ol>
-          <li>Home</li>
-          <li>Projects</li>
+
+<!-- NavBar -->
+    <header>
+        <div class="top">
+      <div class="discover">
+            <img src="../ProjectAssets/logos/circle.svg" alt="circleLogo"/>
+      </div>
+     <nav class="list"> 
+            <ol>
+          <li>
+            <a class="home" href=".//index.html">Home</a>
+          </li>
+          <li>
+            <a class="project" href=".//project.html">Project</a>
+        </li>
           <li>Services</li>
         </ol>
+    </nav>
       </nav>
 
-      <div class="button">
+      <div class="contact">
         <a href=".//contact.html">Contact us</a>
       </div>
+    </div>
     </header>
+
+
+
+
 
     <section class="first">
       <div class="left">
@@ -180,10 +198,14 @@
 </form>
 </section>
 
-<footer class="seventh">
+
+<!-- FOOTER -->
+
+<div class="seventh">
+
     <div class="address">
         <img class="circle" src="../ProjectAssets/logos/circle.svg" alt="circleLogo"/>
-        <footer>2972 Westheimer Rd. Santa Ana, Illinois 85486</footer>
+        <div class="direction">2972 Westheimer Rd. Santa Ana, Illinois 85486</div>
     </div>
 
     <div class="grid-container">
@@ -194,7 +216,8 @@
        <div class="projects">Projects</div>
        <div class="privacy">Privacy Policy</div>
     </div>
-</footer>
+
+</div>
 
 
 <script src="../JavaScript/index.js"></script>
