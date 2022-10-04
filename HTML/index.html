@@ -7,6 +7,7 @@
     <!-- Per utilitzar el CSS de bulma l'he de linkar al document -> posar el de bulma sempre primer, ja que sempre fa cas a l'últim doc que llegeix.  -->
     <link rel="stylesheet" href="../CSS/bulma.css">
     <link rel="stylesheet" href="../CSS/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <title>Home page</title>
   </head>
 
@@ -185,17 +186,23 @@
 </div>
 </section>
 
+<!-- DO you have any questions?: quadrat groc -->
 <section class="sixth">
+<div class="faq">
 <div class="questions">
-    <h1>Do you have any questions</h1>
-    <h4>Let us help you!</h4>
+    <h1 class="ask">Do you have any questions?</h1>
+    <h4 class="help">Let us help you!</h4>
 </div>
 
-<form>
+<form class="info">
     <!-- En el mail posar emoji -->
-    <input class="mail" type="text" placeholder="Enter your email" /> 
+    <div id="input-container">
+    <i class="fa-regular fa-envelope"></i>
+    <input class="mail"  type="text" placeholder="Enter your email" /> 
     <input class="suscribe" type="submit" value="Suscribe"/><br>
+  </div>
 </form>
+</div>
 </section>
 
 
