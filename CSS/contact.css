@@ -139,7 +139,7 @@ body {
     }
 
 
-    /* SECCIÓ 7: FOOTER */
+    /* FOOTER */
 
 .seventh {
     display: flex;
@@ -229,7 +229,7 @@ grid-template-areas:
     display: flex;
     flex-direction: column;
     align-items: left;
-    width: 80%;
+    width: 60%;
     padding: 20px;
 }
 
@@ -284,7 +284,7 @@ grid-template-areas:
 }
 
 .submit {
-    width: 80%;
+    width: 60%;
 }
 
 .button {
