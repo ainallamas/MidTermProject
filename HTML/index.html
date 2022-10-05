@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!-- Per utilitzar el CSS de bulma l'he de linkar al document -> posar el de bulma sempre primer, ja que sempre fa cas a l'últim doc que llegeix.  -->
-    <link rel="stylesheet" href="../CSS/bulma.css">
+    <!-- <link rel="stylesheet" href="../CSS/bulma.css"> -->
     <link rel="stylesheet" href="../CSS/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Home page</title>
   </head>
 
@@ -26,180 +27,220 @@
             <a class="home" href=".//index.html">Home</a>
           </li>
           <li>
-            <a class="project" href=".//project.html">Project</a>
+            <a class="project" href=".//project.html">Projects</a>
         </li>
-          <li>Services</li>
+          <li class="serveis">Services</li>
         </ol>
     </nav>
-      </nav>
 
       <div class="contact">
         <a href=".//contact.html">Contact us</a>
       </div>
     </div>
+
+<!-- MENU HAMBURGUESA -->
+ 
+<div class="mobilemenu">
+  <!-- Top navigation menu -->
+
+  <div class="topnav">
+
+     <a href=".//index.html" class="active">
+      <img src="../ProjectAssets/logos/circle.svg" alt="circleLogo">
+     </a>
+
+      <div class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+      </div>
+
+   </div>
+
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+      <!-- <a href=".//index.html">Home</a>
+      <a href=".//project.html">Projects</a>
+      <a href=" ">Services</a> -->
+      <ol>
+        <li>
+          <a class="home" href=".//index.html">Home</a>
+        </li>
+        <li>
+          <a class="project" href=".//project.html">Projects</a>
+      </li>
+        <li class="serveis">Services</li>
+      </ol>
+    </div>
+
+    <!-- Hamburger menu -->
+
+    
+  </div>
+
     </header>
 
 
-
-
+<!-- SECCIÓN 1: HERO -->
 
     <section class="first">
+
+    <div class="hero">
+
+      
       <div class="left">
-        <div class="empower">Empower Your Business With Stunning Design!</div>
+
+        <h1 class="empower">Empower Your Business With Stunning Design!</h1>
+
         <div class="definition">
           Circle is a digital design and development studio. We design and
           develop astonishing websites and mobile apps.
         </div>
-        <a href=".//project.html">See our work</a>
-        <a href=".//contact.html">Get in touch</a>
+
+        <div class="botones">
+        <a class="see" href=".//project.html">See our work</a>
+        <a class="touch" href=".//contact.html">Get in touch</a>
+        </div>
+
       </div>
 
       <div class="right">
-        <img
-          class="tarjeta"
-          src="../ProjectAssets/hero-section/card-1.png"
-          alt=""
-        />
-        <img
-          class="hero"
-          src="../ProjectAssets/hero-section/hero-image.png"
-          alt=""
-        />
-        <img
-          class="accept"
-          src="../ProjectAssets/hero-section/card-2.png"
-          alt=""
-        />
+        <img class="tarjeta" src="../ProjectAssets/hero-section/card-1.png" alt=""/>
+        
+        <div class="model">
+        <img src="../ProjectAssets/hero-section/hero-image.png" alt=""/>
+       </div>
+
+        <img class="accept" src="../ProjectAssets/hero-section/card-2.png" alt=""/>
       </div>
+    
+    </div>
     </section>
+
+    <!-- SECCIÓN 2: CLIENTES -->
 
     <section class="second">
-      <ol>
-        <li>
-          <img
-            class="airbnb"
-            src="../ProjectAssets/logos/airbnb-logo.svg"
-            alt=""
-          />
-        </li>
-        <li>
-          <img
-            class="google"
-            src="../ProjectAssets/logos/google-logo.svg"
-            alt=""
-          />
-        </li>
-        <li>
-          <img
-            class="microsoft"
-            src="../ProjectAssets/logos/microsoft-logo.svg"
-            alt=""
-          />
-        </li>
-        <li>
-          <img
-            class="fedex"
-            src="../ProjectAssets/logos/fedex-logo.svg"
-            alt=""
-          />
-        </li>
-        <li>
-          <img
-            class="amazon"
-            src="../ProjectAssets/logos/amazon-logo.svg"
-            alt=""
-          />
-        </li>
-      </ol>
+
+      <div class="grid-clientes"> 
+        
+        <div class="airbnb">
+          <img src="../ProjectAssets/logos/airbnb-logo.svg" alt=""/>
+        </div>
+
+        <div class="google"> 
+          <img src="../ProjectAssets/logos/google-logo.svg" alt=""/>
+        </div>
+
+        <div class="microsoft">
+          <img src="../ProjectAssets/logos/microsoft-logo.svg" alt=""/>
+        </div>
+
+        <div class="fedex">
+          <img src="../ProjectAssets/logos/fedex-logo.svg" alt=""/>
+        </div>
+
+        <div class="amazon">
+          <img src="../ProjectAssets/logos/amazon-logo.svg" alt=""/>
+        </div>
+
     </section>
 
+
     <section class="third">
-      <h1>Recent Projects</h1>
+    
+      <h1 class="title">Recent Projects</h1>
+
+      <div class="recent">
 
       <div class="simplify">
-        <img
-          class="grafic"
-          src="../ProjectAssets/projects-section/1.jpg"
-          alt=""
-        />
-        <h2>Simplify</h2>
-        <h4>UI Design & App Development</h4>
+        <img class="grafic" src="../ProjectAssets/projects-section/1.jpg" alt=""/>
+        <h3>Simplify</h3>
+        <p>UI Design & App Development</p>
+        <p class="learn">Learn more</p>
       </div>
 
       <div class="dashcoin">
-        <img
-          class="grafic"
-          src="../ProjectAssets/projects-section/2.jpg"
-          alt=""
-        />
-        <h2>Dashcoin</h2>
-        <h4>Web Development</h4>
+        <img class="grafic" src="../ProjectAssets/projects-section/2.jpg" alt=""/>
+        <h3>Dashcoin</h3>
+        <p>Web Development</p>
+        <p class="learn">Learn more</p>
       </div>
 
       <div class="vectorify">
-        <img
-          class="grafic"
-          src="../ProjectAssets/projects-section/3.jpg"
-          alt=""
-        />
-        <h2>Vectorify</h2>
-        <h4>User Experience Design</h4>
+        <img class="grafic" src="../ProjectAssets/projects-section/3.jpg" alt=""/>
+        <h3>Vectorify</h3>
+        <p>User Experience Design</p>
+        <p class="learn">Learn more</p>
       </div>
+
+    </div>
     </section>
 
+
     <section class="fourth">
+      <div class = "background">
+      
         <div class="testimonials"> 
       <h1>Hear What Our Clients Have to Say</h1>
       <h2>"Circle helped us through every stage of out startup.</h2>
-      <br />
       <h2>We really enjoyed working with you."</h2>
         </div>
-
       <img class="blonde" src="../ProjectAssets/testimonial-section/memoji-1.png" alt=""/>
       <img class="party" src="../ProjectAssets/testimonial-section/memoji-4.png" alt="" />
       <img class="glasses" src="../ProjectAssets/testimonial-section/memoji-3.png" alt="">
       <img class="cap" src="../ProjectAssets/testimonial-section/memoji-2.png" alt="">
-      <img class="profile" src="../ProjectAssets/testimonial-section/profile.png" alt="">
-      <img class="orbit" src="../ProjectAssets/testimonial-section/orbit.png" alt="">
+      <!-- <img class= "orbit" src="../ProjectAssets/testimonial-section/orbit.png" alt=""> -->
+    <div class="profile">
+      <img class="booking" src="../ProjectAssets/testimonial-section/profile.png" alt="">
+      <!-- <p class="nom">Kristine Watson</p>
+      <p class="book">Booking.com</p> -->
+    </div>  
+  </div>
     </section>
 
-<section class="fifth">
-<h1>Our Services</h1>
+
+    <!-- SECCIÓ 5-->
+<section> 
+<h1 class="title">Our Services</h1>
+
 <div class="services">
+
     <div class="interface">
-        <img class="pluma" src="../ProjectAssets/services-section/icons/1.svg" alt="">
+        <img src="../ProjectAssets/services-section/icons/1.svg" alt="">
         <h3>User Interface Design</h3>
         <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
+        <p class="learn">Learn more</p>
     </div>
 
     <div class="experience">
-        <img class="raton" src="../ProjectAssets/services-section/icons/2.svg" alt="">
+        <img src="../ProjectAssets/services-section/icons/2.svg" alt="">
         <h3>User Experience Design</h3>
         <p>Circle always focuses on delivering the best user experience to your customers.</p>
+        <p class="learn">Learn more</p>
     </div>
 
     <div class="application">
-        <img class="doc" src="../ProjectAssets/services-section/icons/3.svg" alt="">
+        <img src="../ProjectAssets/services-section/icons/3.svg" alt="">
         <h3>Application Development</h3>
         <p>We develop high-quality mobile and web applications using the latest technology stack.</p>
+        <p class="learn">Learn more</p>
     </div>
+
 </div>
 </section>
 
-<!-- DO you have any questions?: quadrat groc -->
+<!-- Do you have any questions?: quadrat groc -->
 <section class="sixth">
 <div class="faq">
+
 <div class="questions">
     <h1 class="ask">Do you have any questions?</h1>
     <h4 class="help">Let us help you!</h4>
 </div>
 
 <form class="info">
-    <!-- En el mail posar emoji -->
     <div id="input-container">
-    <i class="fa-regular fa-envelope"></i>
-    <input class="mail"  type="text" placeholder="Enter your email" /> 
-    <input class="suscribe" type="submit" value="Suscribe"/><br>
+      <i class="fa-regular fa-envelope"></i>
+      <input class="mail"  type="text" placeholder="Enter your email" /> 
+      <input class="suscribe" type="submit" value="Suscribe"/>
   </div>
 </form>
 </div>
@@ -217,10 +258,10 @@
 
     <div class="grid-container">
        <div class="team">Team</div>
-       <div class="services">Services</div>
+       <div class="servicio">Services</div>
        <div class="about">About Us</div>
        <div class="press">Press</div>
-       <div class="projects">Projects</div>
+       <div class="proyecto">Projects</div>
        <div class="privacy">Privacy Policy</div>
     </div>
 
