@@ -134,8 +134,6 @@ nav ol {
         text-align: center;
         width: 100%;
     }
-
-
 }
 
 
@@ -470,8 +468,41 @@ min-width: 150px;
 
 }
 
+@media (max-width: 1350px) {
+    
+    .blonde {
+        top: 30px;
+        left: 30px;
+    
+    }
+    
+    .party {
+        right: 30px;
+        top: 30px; 
+    }
+    
+    .cap {
+        right: 30px;
+        bottom: 30px; 
+    }
+    
+    .glasses {
+        bottom: 30px; 
+        left: 30px;
+    }
 
-@media (max-width: 1315px) {
+}
+
+@media (max-width: 1200px) {
+
+    .blonde, .party, .glasses, .cap {
+        position: absolute; 
+        width: 100px;    
+    }
+}
+
+
+@media (max-width: 1100px) {
     .testimonials h1 {
         max-width:  400px;
         margin-bottom: 0;
