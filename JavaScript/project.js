@@ -79,9 +79,25 @@ const cargarData = async () => {
         <p class="learn">Learn more</p>
         </div>
         `
-
     }
 
     getRecentProjects (); 
 
-    
+    // ANOTHER WAY:
+
+    // const getRecentProjects = async () => {
+
+    //     const promise = await fetch ('https://jsonplaceholder.typicode.com/posts/');
+    //     const data = await promise.json ()
+
+    //     document.querySelector('#recentProjectTitle1').innerHTML = `${data[0].title}`; 
+    //     document.querySelector('#recentProjectTitle2').innerHTML = `${data[1].title}`;
+    //     document.querySelector('#recentProjectTitle3').innerHTML = `${data[2].title}`;
+
+    //     document.querySelector('#recentProjectBody1').innerHTML = `${data[0].body}`;
+    //     document.querySelector('#recentProjectBody2').innerHTML = `${data[1].body}`;
+    //     document.querySelector('#recentProjectBody3').innerHTML = `${data[2].body}`;
+
+    //     }
+        
+    //     getRecentProjects (); 
