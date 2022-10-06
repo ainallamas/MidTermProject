@@ -521,6 +521,7 @@ min-width: 150px;
     background-color: white;
     display: flex;
     flex-direction: column;
+    width: 400px;
 }
 
 .recent h3 {
