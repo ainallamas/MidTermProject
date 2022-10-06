@@ -59,21 +59,21 @@ const cargarData = async () => {
         document.querySelector('#recentProjects').innerHTML = 
 
         `<div class="simplify">
-        <img class="grafic" src="../ProjectAssets/projects-section/1.jpg" alt=""/>
+        <img class="grafic" src="./ProjectAssets/projects-section/1.jpg" alt=""/>
         <h3>${data[0].title}</h3>
         <p>${data[0].body}</p>
         <p class="learn">Learn more</p>
         </div>    
         
         <div class="dashcoin">
-        <img class="grafic" src="../ProjectAssets/projects-section/2.jpg" alt=""/>
+        <img class="grafic" src="./ProjectAssets/projects-section/2.jpg" alt=""/>
         <h3>${data[1].title}</h3>
         <p>${data[1].body}</p>
         <p class="learn">Learn more</p>
         </div>
 
         <div class="vectorify">
-        <img class="grafic" src="../ProjectAssets/projects-section/3.jpg" alt=""/>
+        <img class="grafic" src="./ProjectAssets/projects-section/3.jpg" alt=""/>
         <h3>${data[2].title}</h3>
         <p>${data[2].body}</p>
         <p class="learn">Learn more</p>

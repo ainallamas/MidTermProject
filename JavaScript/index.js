@@ -21,21 +21,21 @@ const getOtherProjects = async () => {
     document.querySelector('#otherProjects').innerHTML = 
 
     `<div class="simplify">
-        <img class="grafic" src="../ProjectAssets/projects-section/1.jpg" alt=""/>
+        <img class="grafic" src="./ProjectAssets/projects-section/1.jpg" alt=""/>
         <h3>${data[9].title}</h3>
         <p>${data[9].body}</p>
         <p class="learn">Learn more</p>
       </div>
 
       <div class="dashcoin">
-        <img class="grafic" src="../ProjectAssets/projects-section/2.jpg" alt=""/>
+        <img class="grafic" src="./ProjectAssets/projects-section/2.jpg" alt=""/>
         <h3>${data[4].title}</h3>
         <p>${data[4].body}</p>
         <p class="learn">Learn more</p>
       </div>
 
       <div class="vectorify">
-        <img class="grafic" src="../ProjectAssets/projects-section/3.jpg" alt=""/>
+        <img class="grafic" src="./ProjectAssets/projects-section/3.jpg" alt=""/>
         <h3>${data[6].title}</h3>
         <p>${data[6].body}</p>
         <p class="learn">Learn more</p>
