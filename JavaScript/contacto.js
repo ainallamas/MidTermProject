@@ -13,8 +13,7 @@ function myFunction () {
 }
 
 
-//POST -> console 
-
+//POST  
 
 const fullName = document.querySelector('#nomComplet'); 
 const email = document.querySelector('#email'); 

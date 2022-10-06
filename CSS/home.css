@@ -317,7 +317,7 @@ min-width: 150px;
 }
 
 .ask {
-    margin-left: 50px
+    margin-left: 20px;
 }
 }
 
@@ -370,10 +370,12 @@ min-width: 150px;
 .learn {
     color: #072ACB;
     font-weight: bold;
+    padding: 20px 0;
+    bottom: 0px;
 }
 
 
-@media (max-width: 860px) {
+@media (max-width: 1100px) {
 
     .interface, .experience, .application {
         width: 85%;
@@ -521,25 +523,25 @@ min-width: 150px;
     display: flex;
     flex-direction: column;
     width: 400px;
+    justify-content: space-between;
 }
 
 .recent h3 {
     font-size: 24px;
     font-weight: 500;
-    padding-left: 30px;
+    margin: 30px 30px 20px;
 }
 
 .recent p {
     font-size: 16px;
-    padding-left: 30px;
-    padding-right: 50px;
+    margin: 0 30px 10px; 
 }
 
 
 .grafic {
-width: 100%;
-height: 240px;
-object-fit: cover;
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
 }
 
 
@@ -567,11 +569,10 @@ object-fit: cover;
 
 .grid-clientes {
     display: grid;
-    width: 40%;
+    width: 85%;
+    margin: auto;
     grid-template-areas:
     'airbnb google microsoft fedex amazon';
-    align-items: center;
-    color: #072ACB;
     grid-column-gap: 16px;
     grid-row-gap: 16px;
     }
@@ -603,6 +604,7 @@ object-fit: cover;
 .first {
     display: flex;
     justify-content: center;
+    margin-bottom: 100px;
     
 }
 
@@ -711,6 +713,10 @@ object-fit: cover;
 }
 
 @media (max-width: 655px) {
+    .first {
+        margin-bottom: 15px;
+    }
+    
     .model {
         display: flex;
         /* height: 600px; */

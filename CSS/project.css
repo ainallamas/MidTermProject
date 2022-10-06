@@ -236,22 +236,20 @@ grid-template-areas:
     background-color: white;
     display: flex;
     flex-direction: column;
-}
+    width: 400px;
+    justify-content: space-between;
 
-/* .dashcoin {
-    justify-content: space-around;
-} */
+}
 
 .recent h3 {
     font-size: 24px;
     font-weight: 500;
-    padding-left: 30px;
+    margin: 30px 30px 20px;
 }
 
 .recent p {
     font-size: 16px;
-    padding-left: 30px;
-    padding-right: 50px;
+    margin: 0 30px 10px; 
 }
 
 
@@ -264,6 +262,8 @@ grid-template-areas:
 .learn {
     color: #072ACB;
     font-weight: bold;
+    padding: 20px 0;
+    bottom: 0px;
 }
 
 
@@ -389,7 +389,7 @@ min-width: 150px;
 }
 
 .ask {
-    margin-left: 50px
+    margin-left: 20px
 }
 }
 
@@ -428,14 +428,10 @@ min-width: 150px;
 
 .randomText {
     display: flex;
-    text-align: center;
+    justify-content: center;
     width: 80%;
     margin: auto;
 }
-
-/* .randomText p {
-    width: 100%;
-} */
 
 
 @media (max-width: 770px) {

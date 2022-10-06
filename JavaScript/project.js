@@ -14,6 +14,7 @@ function myFunction () {
 
 //Fetch API -> Random Projects 
 
+//Projecte principal 
  
 const cargarData = async () => {
     
@@ -50,6 +51,7 @@ const cargarData = async () => {
     
     cargarData (); 
     
+    //Other porjects
 
     const getRecentProjects = async () => {
 
